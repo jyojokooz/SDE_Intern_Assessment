@@ -8,7 +8,8 @@
 **Colab notebook links (if used):** https://colab.research.google.com/drive/1s4CrtTL3vHoRN7pYC_W-3UFxjJ4LHeQh?usp=sharing
 
 ---
-<img width="1917" height="962" alt="image" src="https://github.com/user-attachments/assets/8e1582b3-a2a5-4bc9-87c7-d95da5e69d10" />
+<img width="862" height="709" alt="Screenshot 2026-07-26 192511" src="https://github.com/user-attachments/assets/5127261b-2b7c-4007-9497-d74dde2988e5" />
+
 
 ## Q1 - Garment & Body Understanding
 
