@@ -3,7 +3,7 @@
 **Candidate name:** Joel S Raphael
 **Email:** joelraphael6425@gmail.com
 **Date:** 26-07-2025
-**GitHub repo link:** https://github.com/jyojokooz/My_Submission](https://github.com/jyojokooz/SDE_Intern_Assessment
+**GitHub repo link:** https://github.com/jyojokooz/SDE_Intern_Assessment
 **Demo video link (max 5 min):** [FILL IN — YouTube/Drive link after recording]
 **Colab notebook links (if used):** https://colab.research.google.com/drive/1s4CrtTL3vHoRN7pYC_W-3UFxjJ4LHeQh?usp=sharing
 
