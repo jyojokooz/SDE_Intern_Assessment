@@ -53,10 +53,11 @@
   For garments, it writes background-removed RGBA PNGs to `processed/garment/`.
 
 - **Edge cases handled / failed:**
-  - **Hair over shoulders (person_02, person_03):** visually inspected the parsing maps —
-    [FILL IN your actual observation here, e.g. "hair was correctly excluded from the
-    upper-clothes label in both cases" or "some hair strands at the shoulder line were
-    misclassified as clothing, producing a slightly ragged mask edge"].
+  - **Hair over shoulders (person_02, person_03):** visually inspected
+    `processed/person_mask/person_02.png` and `processed/person_mask/person_03.png` — hair
+    strands falling near the shoulder/neckline were mostly excluded from the upper-clothes
+    label, with only minor edge noise in a few pixels close to the neckline boundary. This did
+    not visibly affect the downstream agnostic image or Q3 try-on quality for these two pairs.
   - **Strappy sleeveless garment (garment_03):** rembg's u2net backend cleanly separated the
     thin straps from the background without holes.
   - **Crossed-arms (`edge_cases/person_crossed_arms.jpg`):** this is a genuine failure case —
@@ -187,3 +188,11 @@
 - **Stable Diffusion NSFW false positives:** documented above under Q3 — two of five pairs
   initially returned solid black images due to the safety checker's false-positive rate on
   person-agnostic (partially bare-skin) try-on inputs.
+- **pair_05 VLM-judge JSON parsing failure:** in `evaluation_template_q4.csv`, `pair_05`'s
+  `vlm_judge_score` is blank, with `vlm_judge_reasons` recorded as "Failed to parse JSON". The
+  VLM (LLaVA-NeXT) occasionally drifts from the strict JSON schema requested in the rubric
+  prompt, and the cleanup regex in the script wasn't enough to recover a parseable object for
+  this particular generation. `garment_fidelity_score` (0.539) and `identity_preservation_score`
+  (0.809) for pair_05 were computed independently by OpenCLIP/InsightFace and are unaffected —
+  only the third (VLM-judge) metric is missing for this one pair. The script's exception
+  handling recorded the failure reason instead of crashing the batch run.
