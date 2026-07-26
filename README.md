@@ -8,6 +8,8 @@
 **Colab notebook links (if used):** https://colab.research.google.com/drive/1s4CrtTL3vHoRN7pYC_W-3UFxjJ4LHeQh?usp=sharing
 
 ---
+<img width="862" height="709" alt="Screenshot 2026-07-26 192511" src="https://github.com/user-attachments/assets/5127261b-2b7c-4007-9497-d74dde2988e5" />
+
 
 <img width="862" height="709" alt="Screenshot 2026-07-26 192511" src="https://github.com/user-attachments/assets/5127261b-2b7c-4007-9497-d74dde2988e5" />
 
