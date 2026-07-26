@@ -1,6 +1,7 @@
 # Virtual Try-On Assessment - Submission
 
 **Candidate name:** Joel S Raphael
+
 **Email:** joelraphael6425@gmail.com
 **Date:** 26-07-2025
 **GitHub repo link:** https://github.com/jyojokooz/SDE_Intern_Assessment
