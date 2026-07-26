@@ -4,7 +4,7 @@
 **Email:** joelraphael6425@gmail.com
 **Date:** 26-07-2025
 **GitHub repo link:** https://github.com/jyojokooz/SDE_Intern_Assessment
-**Demo video link (max 5 min):** [FILL IN — YouTube/Drive link after recording]
+**Demo video link (max 5 min):** https://drive.google.com/file/d/1MPxh2TI-Luk6pXXGunN2k01_KEj9XOEj/view?usp=drivesdk
 **Colab notebook links (if used):** https://colab.research.google.com/drive/1s4CrtTL3vHoRN7pYC_W-3UFxjJ4LHeQh?usp=sharing
 
 ---
