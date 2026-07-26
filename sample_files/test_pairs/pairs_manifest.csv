@@ -1,0 +1,10 @@
+pair_id,person_image,garment_image,source,use,edge_case_notes
+pair_01,person/person_01.png,garment/garment_01.jpg,provided,official test pair (Q3-Q5),clean baseline pair
+pair_02,person/person_02.png,garment/garment_02.jpg,provided,official test pair (Q3-Q5),person has hair over left shoulder (Q2 edge case)
+pair_03,person/person_03.png,garment/garment_03.jpg,provided,official test pair (Q3-Q5),person has hair over left shoulder; garment is a strappy/sleeveless top (Q2 edge cases)
+pair_04,person/my_person_1.jpg,garment/my_garment_1.jpg,candidate,candidate-sourced pair (Q3-Q5),
+pair_05,person/my_person_2.jpg,garment/my_garment_2.jpg,candidate,candidate-sourced pair (Q3-Q5),
+person_04,person/person_04.png,,provided,additional Q1/Q2 test image,
+person_05,person/person_05.png,,provided,additional Q1/Q2 test image,
+garment_04,,garment/garment_04.jpg,provided,additional Q1/Q2 test image,
+garment_05,,garment/garment_05.jpg,provided,additional Q1/Q2 test image,

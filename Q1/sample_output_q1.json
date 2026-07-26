@@ -1,0 +1,272 @@
+{
+    "my_person_1.jpg": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "Tank Top",
+            "sleeve_length": "Sleeveless",
+            "neckline": "V-neck",
+            "primary_color": "White",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": true
+        }
+    },
+    "my_person_2.jpg": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "Tank Top",
+            "sleeve_length": "Sleeveless",
+            "neckline": "V-neck",
+            "primary_color": "White",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": true
+        }
+    },
+    "person_01.png": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "Tank Top",
+            "sleeve_length": "Sleeveless",
+            "neckline": "V-neck",
+            "primary_color": "White",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": true
+        }
+    },
+    "person_02.png": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "T-shirt / Dress / Tank Top / etc.",
+            "sleeve_length": "Short",
+            "neckline": "V-neck",
+            "primary_color": "White",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": true
+        }
+    },
+    "person_03.png": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "Tank Top",
+            "sleeve_length": "Sleeveless",
+            "neckline": "V-neck",
+            "primary_color": "White",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": true
+        }
+    },
+    "person_04.png": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "T-shirt / Dress / Tank Top / etc.",
+            "sleeve_length": "Sleeveless",
+            "neckline": "V-neck",
+            "primary_color": "Yellow",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": true
+        }
+    },
+    "person_05.png": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "Tank Top",
+            "sleeve_length": "Sleeveless",
+            "neckline": "V-neck",
+            "primary_color": "White",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": true
+        }
+    },
+    "garment_01.jpg": {
+        "person_detected": false,
+        "garment_attributes": {
+            "garment_type": "T-shirt",
+            "sleeve_length": "Short",
+            "neckline": "V-neck",
+            "primary_color": "Purple",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "null",
+            "upper_body_visible": true,
+            "lower_body_visible": false
+        }
+    },
+    "garment_02.jpg": {
+        "person_detected": false,
+        "garment_attributes": {
+            "garment_type": "T-shirt / Dress / Tank Top / etc.",
+            "sleeve_length": "Long",
+            "neckline": "Collar",
+            "primary_color": "Black",
+            "pattern": "Floral"
+        },
+        "person_attributes": {
+            "pose_category": "null",
+            "upper_body_visible": true,
+            "lower_body_visible": false
+        }
+    },
+    "garment_03.jpg": {
+        "person_detected": false,
+        "garment_attributes": {
+            "garment_type": "Tank Top",
+            "sleeve_length": "Sleeveless",
+            "neckline": "Round",
+            "primary_color": "Yellow",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "null",
+            "upper_body_visible": true,
+            "lower_body_visible": false
+        }
+    },
+    "garment_04.jpg": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "T-shirt",
+            "sleeve_length": "Short",
+            "neckline": "V-neck",
+            "primary_color": "Black",
+            "pattern": "Graphic"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": false
+        }
+    },
+    "garment_05.jpg": {
+        "person_detected": false,
+        "garment_attributes": {
+            "garment_type": "T-shirt / Dress / Tank Top / etc.",
+            "sleeve_length": "Short / Long / Sleeveless / None",
+            "neckline": "Round / V-neck / Collar / None",
+            "primary_color": "White",
+            "pattern": "Floral"
+        },
+        "person_attributes": {
+            "pose_category": "null",
+            "upper_body_visible": true,
+            "lower_body_visible": false
+        }
+    },
+    "my_garment_1.jpg": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "T-shirt",
+            "sleeve_length": "Short",
+            "neckline": "V-neck",
+            "primary_color": "White",
+            "pattern": "Graphic"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": false
+        }
+    },
+    "my_garment_2.jpg": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "T-shirt",
+            "sleeve_length": "Short",
+            "neckline": "V-neck",
+            "primary_color": "Black",
+            "pattern": "Graphic"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": false
+        }
+    },
+    "no_person.jpg": {
+        "person_detected": false,
+        "garment_attributes": {
+            "garment_type": null,
+            "sleeve_length": null,
+            "neckline": null,
+            "primary_color": null,
+            "pattern": null
+        },
+        "person_attributes": {
+            "pose_category": null,
+            "upper_body_visible": false,
+            "lower_body_visible": false
+        }
+    },
+    "person_crossed_arms.jpg": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "Dress",
+            "sleeve_length": "Long",
+            "neckline": "V-neck",
+            "primary_color": "Black",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": true
+        }
+    },
+    "person_seated.jpg": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "Button-up shirt",
+            "sleeve_length": "Long",
+            "neckline": "Collar",
+            "primary_color": "Blue",
+            "pattern": "Checkered"
+        },
+        "person_attributes": {
+            "pose_category": "Front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": true
+        }
+    },
+    "person_side_pose.jpg": {
+        "person_detected": true,
+        "garment_attributes": {
+            "garment_type": "T-shirt",
+            "sleeve_length": "Short",
+            "neckline": "V-neck",
+            "primary_color": "Gray",
+            "pattern": "Solid"
+        },
+        "person_attributes": {
+            "pose_category": "front-facing",
+            "upper_body_visible": true,
+            "lower_body_visible": false
+        }
+    }
+}

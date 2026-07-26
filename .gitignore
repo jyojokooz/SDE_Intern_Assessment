@@ -1,0 +1,45 @@
+# ============================================================
+# .gitignore — Virtual Try-On Assessment Submission
+# ============================================================
+
+# --- Large source zip (not needed in the repo) ---
+sample_files.zip
+*.zip
+
+# --- Python cache / bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Jupyter notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+
+# --- Model weights / caches ---
+*.safetensors
+*.ckpt
+*.bin
+*.onnx
+.cache/
+huggingface/
+
+# --- OS-generated files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editor/IDE settings ---
+.vscode/
+.idea/
+*.swp
+
+# --- Logs ---
+*.log
+
+# --- Environment variables / secrets ---
+.env

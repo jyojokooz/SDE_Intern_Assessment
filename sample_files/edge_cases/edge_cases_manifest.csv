@@ -1,0 +1,5 @@
+file,edge_case,used_in,expected_behavior,source_license
+person_crossed_arms.jpg,arms crossed at chest,Q2 parsing robustness,parsing map should still separate arms from torso; agnostic mask must not erase forearms,COCO val2014 via OpenPose examples (CC BY 4.0)
+person_side_pose.jpg,side-facing pose,Q1 pose classification + Q5 guardrail,Q1 JSON pose_category = "side"; Q5 must warn that pose is unsuitable,COCO val2014 via OpenPose examples (CC BY 4.0)
+person_seated.jpg,seated pose,Q1 pose classification + Q5 guardrail,Q1 JSON pose_category = "seated"; Q5 must warn that pose is unsuitable,COCO val2014 via OpenPose examples (CC BY 4.0)
+no_person.jpg,no person in image,Q5 guardrail,app must reject the image with a clear message,OpenCV sample data (Apache 2.0)

@@ -1,0 +1,18 @@
+{
+  "person_image": "person_01.png",
+  "garment_image": "garment_01.jpg",
+  "garment_attributes": {
+    "type": "t-shirt",
+    "sleeve_length": "short",
+    "neckline": "crew",
+    "primary_color": "white",
+    "pattern": "graphic print"
+  },
+  "person_attributes": {
+    "pose_category": "front-facing",
+    "upper_body_visible": true,
+    "lower_body_visible": true
+  },
+  "model_used": "MiniCPM-V-2.6",
+  "confidence_notes": "Pattern detected via close-up region; neckline partially occluded by hair."
+}

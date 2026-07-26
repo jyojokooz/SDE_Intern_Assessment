@@ -1,0 +1,6 @@
+pair_id,person_image,garment_image,tryon_model,garment_fidelity_score,identity_preservation_score,vlm_judge_score,vlm_judge_reasons,artifacts_observed,notes
+pair_01,person_01.png,garment_01.jpg,,,,,,,
+pair_02,person_02.png,garment_02.jpg,,,,,,,
+pair_03,person_03.png,garment_03.jpg,,,,,,,
+pair_04,my_person_1.jpg,my_garment_1.jpg,,,,,,,
+pair_05,my_person_2.jpg,my_garment_2.jpg,,,,,,,
