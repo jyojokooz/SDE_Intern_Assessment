@@ -200,3 +200,10 @@
   (0.809) for pair_05 were computed independently by OpenCLIP/InsightFace and are unaffected —
   only the third (VLM-judge) metric is missing for this one pair. The script's exception
   handling recorded the failure reason instead of crashing the batch run.
+
+
+  **Demo video link (max 5 min):** [Watch on Google Drive](https://drive.google.com/file/d/1MPxh2TI-Luk6pXXGunN2k01_KEj9XOEj/view?usp=drivesdk)
+
+[![Demo Video Preview](https://github.com/user-attachments/assets/YOUR_THUMBNAIL_ID)](https://drive.google.com/file/d/1MPxh2TI-Luk6pXXGunN2k01_KEj9XOEj/view?usp=drivesdk)
+
+*Click the image above to watch the full demo video.*
