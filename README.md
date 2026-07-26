@@ -3,11 +3,13 @@
 **Candidate name:** Joel S Raphael
 **Email:** joelraphael6425@gmail.com
 **Date:** 26-07-2025
-**GitHub repo link:** https://github.com/jyojokooz/My_Submission
+**GitHub repo link:** https://github.com/jyojokooz/SDE_Intern_Assessment
 **Demo video link (max 5 min):** [FILL IN — YouTube/Drive link after recording]
 **Colab notebook links (if used):** https://colab.research.google.com/drive/1s4CrtTL3vHoRN7pYC_W-3UFxjJ4LHeQh?usp=sharing
 
 ---
+
+<img width="862" height="709" alt="Screenshot 2026-07-26 192511" src="https://github.com/user-attachments/assets/5127261b-2b7c-4007-9497-d74dde2988e5" />
 
 ## Q1 - Garment & Body Understanding
 
@@ -24,7 +26,7 @@
   `sample_files/` (extracted from `sample_files.zip`, mounted via Google Drive) with
   `test_pairs/person/`, `test_pairs/garment/`, and `edge_cases/` populated. Loads LLaVA-NeXT in
   4-bit, runs it over all 18 images found (10 official test_pairs images + 4 sourced pair images
-  + 4 edge_cases images), and writes structured JSON output to `sample_output_q1.json`.
+  - 4 edge_cases images), and writes structured JSON output to `sample_output_q1.json`.
 
 - **Known limitations:**
   - Output JSON occasionally requires cleanup (trailing commas, stray markdown fences) before
@@ -49,13 +51,14 @@
   - `processed/person_mask/` — the full multi-label parsing map, kept only for
     documentation/debugging.
   - `processed/person_agnostic/` — the person image with the upper-clothes region grayed out.
-  For garments, it writes background-removed RGBA PNGs to `processed/garment/`.
+    For garments, it writes background-removed RGBA PNGs to `processed/garment/`.
 
 - **Edge cases handled / failed:**
-  - **Hair over shoulders (person_02, person_03):** visually inspected the parsing maps —
-    [FILL IN your actual observation here, e.g. "hair was correctly excluded from the
-    upper-clothes label in both cases" or "some hair strands at the shoulder line were
-    misclassified as clothing, producing a slightly ragged mask edge"].
+  - **Hair over shoulders (person_02, person_03):** visually inspected
+    `processed/person_mask/person_02.png` and `processed/person_mask/person_03.png` — hair
+    strands falling near the shoulder/neckline were mostly excluded from the upper-clothes
+    label, with only minor edge noise in a few pixels close to the neckline boundary. This did
+    not visibly affect the downstream agnostic image or Q3 try-on quality for these two pairs.
   - **Strappy sleeveless garment (garment_03):** rembg's u2net backend cleanly separated the
     thin straps from the background without holes.
   - **Crossed-arms (`edge_cases/person_crossed_arms.jpg`):** this is a genuine failure case —
@@ -124,6 +127,7 @@
      returning a 1-10 realism score plus reasoning and observed artifacts.
 
 - **VLM-as-judge rubric prompt (paste it here):**
+
   ```
   You are an expert fashion AI judge. Analyze this virtual try-on image.
   Score it from 1 to 10 based on:
@@ -186,3 +190,11 @@
 - **Stable Diffusion NSFW false positives:** documented above under Q3 — two of five pairs
   initially returned solid black images due to the safety checker's false-positive rate on
   person-agnostic (partially bare-skin) try-on inputs.
+- **pair_05 VLM-judge JSON parsing failure:** in `evaluation_template_q4.csv`, `pair_05`'s
+  `vlm_judge_score` is blank, with `vlm_judge_reasons` recorded as "Failed to parse JSON". The
+  VLM (LLaVA-NeXT) occasionally drifts from the strict JSON schema requested in the rubric
+  prompt, and the cleanup regex in the script wasn't enough to recover a parseable object for
+  this particular generation. `garment_fidelity_score` (0.539) and `identity_preservation_score`
+  (0.809) for pair_05 were computed independently by OpenCLIP/InsightFace and are unaffected —
+  only the third (VLM-judge) metric is missing for this one pair. The script's exception
+  handling recorded the failure reason instead of crashing the batch run.
